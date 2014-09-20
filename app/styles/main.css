@@ -1,0 +1,191 @@
+/* ==========================================================================
+Lists
+========================================================================== */
+/* * Addresses margins set differently in IE 6/7. */
+ 
+dl, menu, ol, ul {
+    margin: 1em 0;
+}
+dd {
+    margin: 0 0 0 40px;
+}
+/* * Addresses paddings set differently in IE 6/7. */
+menu, ol, ul {
+    padding: 0 0 0 40px;
+}
+/* * Corrects list images handled incorrectly in IE 7. */
+nav ul, nav ol {
+    list-style: none;
+    list-style-image: none;
+}
+
+/*Text Styles*/
+html, body {
+    font-size: 1.125em;
+    height: 100%;
+    width: 100%;
+}
+
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 400;
+  line-height: 1.45;
+  color: #464A50;
+  background-color: #fff;
+}
+
+p {margin-bottom: 1.3em;}
+
+h1, h2, h3, h4 {
+  margin: 1.414em 0 0.5em;
+  font-family: Lato;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+h1 {
+  margin-top: 0;
+  font-size: 2.074em;
+}
+
+h2 {font-size: 1.728em;}
+
+h3 {font-size: 1.44em;}
+
+h4 {font-size: 1.2em;}
+
+small, .font_small {font-size: 0.833em;}
+
+img {
+  max-width: 100%;
+}
+
+
+
+.container-fluid {
+     height: 100%;
+     width: 100%;
+     padding-right: 0;
+     padding-left: 0;
+ }
+
+.container-fluid-header {
+     height: 100%;
+     display: table;
+     width: 100%;
+     padding-right: 0;
+     padding-left: 0;
+
+ }
+
+/*Panel styles*/
+ #scotch-panel {
+    background: #46AAF2;
+}
+#scotch-panel h2 {
+    color: #9ED1FF;
+    padding: 20px 0 0;
+}
+#scotch-panel form {
+    padding: 20px 0 40px;
+}
+#scotch-panel label {
+    color: #9ED1FF;
+}
+
+.navbar {
+    margin-bottom: 0;
+}
+
+.navbar .navbar-default {
+    background-color: #fbfbfb;
+}
+.navtoggle {
+    margin: 15px auto;
+}
+.hero {
+    /*background: url(../img/hero-bg.jpg) no-repeat top center #f4f5fc;*/
+    background: url('../img/lumber.jpg') no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    /*height: 100%;*/
+    /*min-height: 685px;*/
+    display: table-cell;
+    vertical-align: middle;
+    width: 100%;
+
+}
+
+.hero-text {
+    height: 685px;
+}
+
+.hero .hero-logo {
+    border-radius: 50%;
+    width: 400px;
+    margin-top: 150px;
+
+}
+
+.sec {
+    padding: 115px 15px;
+    background-color: #fbfbfb;
+}
+
+
+
+
+.fatree {
+    color: #525E43;
+    padding: 0 20px;
+}
+
+.tree {
+    text-align: center;
+    text-transform: uppercase;
+    color: #353738;
+    letter-spacing: 2px;
+    position: relative;
+    padding-top: 75px;
+}
+
+.lumberleft {
+    /*background-image: url('../img/lumber_left.jpg');*/
+     background: url('https://41.media.tumblr.com/63343aa7a2da7c47466a6db1c98e90fa/tumblr_n0y05sZ0r21rq2p74o1_1280.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+        -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 600px;
+    position: relative;
+}
+
+a {
+    color: #282f35;
+    -webkit-transition: all .25s ease;
+    -moz-transition: all .25s ease;
+    -ms-transition: all .25s ease;
+    -o-transition: all .25s ease;
+    transition: all .25s ease;
+}
+a:hover {
+    color: #64c29e;
+    text-decoration: none;
+}
+p {
+    text-align: center;
+    /*font-size: 14px;*/
+    /*color: #848789;*/
+    font-weight: 300;
+    word-spacing: 2px;
+    line-height: 1.8em;
+    margin-top: 25px;
+}
+
+
+
+
