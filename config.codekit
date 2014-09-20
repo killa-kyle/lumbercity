@@ -242,6 +242,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/app\/img\/logo1.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 58007,
+		"inputAbbreviatedPath": "\/app\/img\/logo1.png",
+		"outputAbbreviatedPath": "\/app\/img\/logo1.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/app\/img\/lumber.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -260,6 +271,17 @@
 		"initialSize": 3.05835e+06,
 		"inputAbbreviatedPath": "\/app\/img\/lumber_bg.jpg",
 		"outputAbbreviatedPath": "\/app\/img\/lumber_bg.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/app\/img\/lumber_left.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 370310,
+		"inputAbbreviatedPath": "\/app\/img\/lumber_left.jpg",
+		"outputAbbreviatedPath": "\/app\/img\/lumber_left.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -293,6 +315,17 @@
 		"initialSize": 9920,
 		"inputAbbreviatedPath": "\/app\/img\/navbg.jpg",
 		"outputAbbreviatedPath": "\/app\/img\/navbg.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/app\/img\/navlogo.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 7037,
+		"inputAbbreviatedPath": "\/app\/img\/navlogo.png",
+		"outputAbbreviatedPath": "\/app\/img\/navlogo.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -422,6 +455,17 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/app\/scripts\/main.js",
 		"outputAbbreviatedPath": "\/app\/_\/js\/main-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 2
+		},
+	"\/app\/scripts\/scotchPanels.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/app\/scripts\/scotchPanels.js",
+		"outputAbbreviatedPath": "\/app\/_\/js\/scotchPanels-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
