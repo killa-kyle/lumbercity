@@ -14,11 +14,7 @@ dd {
 /*menu, ol, ul {
     padding: 0 0 0 40px;
 }*/
-/* * Corrects list images handled incorrectly in IE 7. */
-nav ul, nav ol {
-    list-style: none;
-    list-style-image: none;
-}
+
 
 /*Text Styles*/
 html, body {
@@ -30,14 +26,34 @@ html, body {
 
 body {
   font-family: 'Source Sans Pro', sans-serif;
-  font-weight: 400;
+  font-weight: 300;
   line-height: 1.45;
   color: #464A50;
   
   background-color: #fbfbfb;
 }
 
-p {margin-bottom: 1.3em;}
+
+a {
+    color: #282f35;
+    -webkit-transition: all .25s ease;
+    -moz-transition: all .25s ease;
+    -ms-transition: all .25s ease;
+    -o-transition: all .25s ease;
+    transition: all .25s ease;
+}
+a:hover {
+    color: #6E8458;
+    text-decoration: none;
+}
+p {
+    margin-bottom: 1.3em;
+    font-weight: 300;
+    word-spacing: 2px;
+    line-height: 1.8em;
+    margin-top: 25px;
+}
+
 
 h1, h2, h3, h4 {
   margin: 1.414em 0 0.5em;
@@ -57,7 +73,6 @@ h3 {font-size: 1.44em;}
 
 h4 {font-size: 1.2em;}
 
-small, .font_small {font-size: 0.833em;}
 
 img {
   max-width: 100%;
@@ -111,8 +126,38 @@ img {
 #scotch-panel li:hover {
 
         background-color: rgba(255,255,255, .4);
-
 }
+
+/*Clickable overlay to close the scotch-panel*/
+.overlay {
+  position: fixed;
+  background: rgba(0, 0, 0, 0.75);
+  width: 100%;
+  height: 100%;
+  display: none;
+  z-index: 999999;
+      -webkit-transition: all 225ms ease;
+    -moz-transition: all 225ms ease;
+    transition: all 225ms ease;
+  
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  
+    -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
+  
+  cursor: pointer;
+}
+.scotch-is-showing .overlay {
+  display: block;
+}
+
+
+
+
+/*Navbar styles*/
 
 .navbar {
     margin-bottom: 0;
@@ -120,31 +165,30 @@ img {
 .navbar-nav>li>a {
     padding: 20px 15px;
 }
-.navbar-brand {
+.navbar-default .navbar-brand {
     height: 60px;
     font-size: 26px;
     padding: 20px 15px;
     font-weight: 700;
+    color: #525E43;
 }
 .navbar .navbar-default {
     background-color: #fbfbfb;
 }
 .navbar-toggle {
-    /*margin: 15px auto;*/
+    
     padding: 10px;
     margin-top: 10px;
     margin-right: 15px;
-    /*margin-bottom: 8px;*/
+    
 }
 .hero {
-    /*background: url(../img/hero-bg.jpg) no-repeat top center #f4f5fc;*/
+    
     background: url('../img/lumber.jpg') no-repeat center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    /*height: 100%;*/
-    /*min-height: 685px;*/
     display: table-cell;
     vertical-align: middle;
     width: 100%;
@@ -187,12 +231,16 @@ img {
     background-color: #fbfbfb;
 }
 
+/* ==========================================================================
+    Section styling
+========================================================================== */
 
 
 
 
 ul.services {
-    text-align: left;
+    /*text-align: justify;*/
+    padding-left: 5px;
     
 }
 
@@ -208,7 +256,7 @@ ul.services li {
 }
 
 
-
+ /*font awesome tree icon color*/
 .fatree {
     color: #525E43;  /*this needs to change*/
     padding: 0 20px;
@@ -219,11 +267,11 @@ ul.services li {
     font-weight: 700;
 }
 
-.intro {
-    text-align: left;
-}
 
-.tree {
+
+
+
+.sectionhead {
     text-align: center;
     text-transform: uppercase;
     color: #353738;
@@ -258,87 +306,11 @@ ul.services li {
     height: 600px;
     position: relative;    
 }
-a {
-    color: #282f35;
-    -webkit-transition: all .25s ease;
-    -moz-transition: all .25s ease;
-    -ms-transition: all .25s ease;
-    -o-transition: all .25s ease;
-    transition: all .25s ease;
-}
-a:hover {
-    color: #6E8458;
-    text-decoration: none;
-}
-p {
-    text-align: left;
-    /*font-size: 14px;*/
-    /*color: #848789;*/
-    font-weight: 300;
-    word-spacing: 2px;
-    line-height: 1.8em;
-    margin-top: 25px;
-}
-
-
-/*@media screen and (max-width: 767px) and {
-    .navbar-header {
-        float: none;
-    }
-    .navbar-toggle {
-        display: block;
-    }
-
-    .navbar-collapse.collapse {
-        display: none!important;
-    }
-
-    .navbar-nav>li {
-        float: none;
-    }
-}
-*/
-@media (max-width:768px){
-    .navbar-header {
-        float: none;
-    }
-    .navbar-left,.navbar-right {
-        float: none !important;
-    }
-    .navbar-toggle {
-        display: block;
-    }
-    .navbar-collapse {
-        border-top: 1px solid transparent;
-        box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
-    }
-    .navbar-fixed-top {
-          top: 0;
-          border-width: 0 0 1px;
-     }
-    .navbar-collapse.collapse {
-        display: none!important;
-    }
-    .navbar-nav {
-        float: none!important;
-          margin-top: 7.5px;
-     }
-     .navbar-nav>li {
-        float: none;
-    }
-    .navbar-nav>li>a {
-        padding-top: 10px;
-        padding-bottom: 10px;
-    }
-    .collapse.in{
-          display:block !important;
-     } 
-}
 
 
 
 
-
+/*Contact form styles*/
 
 .panel {
     border: none;
@@ -351,7 +323,7 @@ p {
 
 }
 .panel.btn-footer .panel-footer .btn {
-  border-radius: 0 0 20px 20px;
+  border-radius: 0 0 40px 40px;
   color: #fff;
   font-weight: 700;
   font-size: 1.35em;
@@ -359,12 +331,14 @@ p {
 }
  .panel-body {
   background: #fbfbfb;
-  border-radius: 20px 20px 0 0;
+  border-radius: 40px 40px 0 0;
   border: 14px solid  #6E8458;
 }
 
 .panel-footer {
     border-top: none;
+    border-bottom-right-radius: 40px;
+    border-bottom-left-radius: 40px;
 }
 .panel.contact.panel-default {
   /*border: none;*/
@@ -373,18 +347,85 @@ p {
 
 
 footer {
-    margin-top: 115px;
-    background-color: #6E8458;
+    /*margin-top: 115px;*/
+    background-color: #f7f7f7;
     min-height: 50px;
-    padding: 10px;
-    color: #fbfbfb;
+    padding: 100px 0;
+    /*color: #fbfbfb;*/
 
 }
 
-footer  a {
-  color: #fbfbfb
+.credit {
+  font-style: italic;
+  font-size: .87em;
+}
+.footer-rightcol p {
+    text-align: center;
+    /*font-style: italic;*/
+    margin-top: 20px;
 }
 
-footer a:hover {
-  color: orange;
+.footer-rightcol {
+    margin-left: auto;
+    margin-right: auto;
 }
+.footer-rightcol ul {
+    text-align: center;
+    padding: 0;
+}
+.footer-rightcol li {
+    list-style: none;
+    display: inline-block;
+    margin-right: 15px;
+}
+.footer-rightcol li a {
+    opacity: 1;
+}
+.footer-rightcol li a:hover {
+    opacity: 0.5;
+}
+
+
+
+
+
+
+
+
+
+
+/*Media Queries*/
+
+
+@media screen and (max-width: 1111px) {
+  .tree {
+        font-size: 10px; 
+     }
+}
+
+/*smaller screens*/
+@media screen and (max-width: 768px) {
+      
+      /*bring font size down to fix more text on screen*/
+      body  {
+        font-size: 18px;
+      }
+      /*reduce section header fonts*/
+     .sectionhead {
+        font-size: 20px; 
+     }
+      /*hide section FA trees on smaller screens*/
+     .fa-tree {
+      visibility: hidden;
+      display: none;
+     }
+    
+
+      
+      /*Show FA tree icon on navbar*/
+     .navbar-toggle .fa-tree {
+      visibility: visible;
+      display: inline-block;
+     }
+}
+
